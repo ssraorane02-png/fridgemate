@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.settings-page{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(26,45,81,.82),
+    rgba(8,15,28,.82)),
+    url("../assets/images/dashboard-bg.png");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.settings-container{
+
+    width:700px;
+
+    margin:auto;
+
+    padding:40px 0;
+}
+
+.settings-container h1{
+
+    color:white;
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:35px;
+}
+
+.settings-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.settings-card h2{
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:25px;
+
+    font-size:24px;
+}
+
+.settings-card h2 svg{
+
+    color:#1A8FB4;
+}
+
+.settings-card p{
+
+    color:white;
+
+    margin-bottom:12px;
+
+    font-size:17px;
+}
+
+.settings-card input[type="password"]{
+
+    width:100%;
+
+    height:55px;
+
+    padding:0 18px;
+
+    margin-bottom:18px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.10);
+
+    color:white;
+
+    font-size:16px;
+}
+
+.settings-card input::placeholder{
+
+    color:#d8d8d8;
+}
+
+.save-btn{
+
+    width:100%;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#1A8FB4;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.save-btn:hover{
+
+    background:#0f7b9f;
+}
+
+.settings-card label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:white;
+
+    margin-bottom:18px;
+
+    font-size:17px;
+
+    cursor:pointer;
+}
+
+.settings-card input[type="checkbox"]{
+
+    width:18px;
+    height:18px;
+
+    accent-color:#1A8FB4;
+}
+
+.logout-btn{
+
+    width:100%;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#d63031;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    transition:.3s;
+}
+
+.logout-btn:hover{
+
+    background:#b71c1c;
+
+    transform:translateY(-2px);
+}
+
+@media(max-width:768px){
+
+.settings-container{
+
+    width:92%;
+
+    padding:30px 0;
+}
+
+.settings-container h1{
+
+    font-size:34px;
+}
+
+.settings-card{
+
+    padding:22px;
+}
+
+.settings-card h2{
+
+    font-size:20px;
+}
+
+.settings-card p,
+.settings-card label{
+
+    font-size:15px;
+}
+
+}

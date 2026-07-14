@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.barcode-container{
+
+    width:100%;
+    min-height:100vh;
+
+   background:#eef7fb;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.barcode-card{
+
+    width:520px;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    background:rgba(202, 172, 172, 0.15);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
+
+    text-align:center;
+
+}
+
+.barcode-main-icon{
+
+    font-size:60px;
+    color:#6fcfe7;
+
+    margin-bottom:20px;
+
+}
+
+.barcode-title{
+
+    color:black;
+    margin-bottom:10px;
+
+}
+
+.barcode-text{
+
+    color:rgb(97, 82, 82);;
+    line-height:28px;
+    margin-bottom:30px;
+
+}
+
+.barcode-frame{
+
+    width:300px;
+    height:200px;
+
+    margin:0 auto 30px;
+
+    border:4px solid #6fcfe7;
+
+    border-radius:20px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.barcode-scan-line{
+
+    position:absolute;
+
+    width:100%;
+    height:3px;
+
+    background:#6fcfe7;
+
+    animation:barcodeScan 2s infinite;
+
+}
+
+@keyframes barcodeScan{
+
+    0%{
+        top:0;
+    }
+
+    100%{
+        top:190px;
+    }
+
+}
+
+.barcode-camera-btn,
+.barcode-upload-btn,
+.barcode-cancel-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    margin-top:15px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+
+    transition:all .3s ease;
+
+}
+
+.barcode-camera-btn{
+
+    background:#1A8FB4;
+    color:white;
+
+}
+
+.barcode-camera-btn:hover{
+
+    background:#0d789b;
+    transform:translateY(-2px);
+
+}
+
+.barcode-upload-btn{
+
+    background:white;
+    color:#1A8FB4;
+
+}
+
+.barcode-upload-btn:hover{
+
+    background:#eef8fb;
+    transform:translateY(-2px);
+
+}
+
+.barcode-cancel-btn{
+
+    background:#ff4b4b;
+    color:white;
+
+}
+
+.barcode-cancel-btn:hover{
+
+    background:#dc3030;
+    transform:translateY(-2px);
+
+}
+
+.barcode-or{
+
+    color:black;
+    font-weight:bold;
+
+    margin-top:20px;
+
+}

@@ -1,0 +1,231 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html,
+body,
+#root{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+/* Background */
+.otp-container{
+    width:100vw;
+    height:100vh;
+
+    background:url("../assets/images/login-bg.png") center center no-repeat;
+    background-size:cover;
+ background-position: center 20%; 
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    padding-right: 0px;
+}
+
+/* Wrapper */
+.otp-box{
+    width:100%;
+    max-width:900px;
+    height:700px;
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding:28px 157px;   /* Top-Bottom 35px, Left-Right 50px */
+    padding-top: 80px;
+}
+
+/* Glass Card */
+.otp-form{
+
+    width:500px;
+
+    padding:45px 50px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:0 10px 35px rgba(0,0,0,.4);
+
+    transform:translateY(-10px);
+}
+
+/* Logo */
+.otp-image{
+    width:110px;
+    display:block;
+    margin:0 auto 20px;
+}
+
+/* Heading */
+.otp-heading{
+    text-align:center;
+    font-size:48px;
+    font-weight:700;
+
+    color:#6fcfe7;
+
+    margin-bottom:20px;
+
+    text-shadow:0 0 10px rgba(33,190,229,.45);
+}
+
+/* Description */
+.otp-description{
+    text-align:center;
+    color:white;
+    font-size:19px;
+    line-height:30px;
+    margin-bottom:25px;
+}
+
+/* OTP Boxes */
+.otp-input-container{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-bottom:30px;
+}
+
+.otp-input{
+
+    width:50px;
+    height:55px;
+
+    border:none;
+    outline:none;
+
+    border-radius:12px;
+
+    background:white;
+
+    text-align:center;
+
+    font-size:24px;
+    font-weight:bold;
+
+    color:#1A8FB4;
+
+    transition:.3s;
+}
+
+.otp-input:focus{
+    border:2px solid #1A8FB4;
+    box-shadow:0 0 10px rgba(26,143,180,.45);
+}
+
+/* Button */
+.otp-button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#1A8FB4;
+
+    color:white;
+
+    font-size:20px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.otp-button:hover{
+    background:#0b6e91;
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(26,143,180,.45);
+}
+
+/* Resend */
+.otp-resend{
+
+    text-align:center;
+
+    color:white;
+
+    margin-top:25px;
+
+    font-size:18px;
+}
+
+.otp-resend span{
+    color:#4dd7ff;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.otp-resend span:hover{
+    text-decoration:underline;
+}
+
+/* Footer */
+.otp-footer{
+
+    text-align:center;
+
+    margin-top:18px;
+
+    font-size:18px;
+}
+
+.otp-footer a{
+    color:#4dd7ff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.otp-footer a:hover{
+    text-decoration:underline;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .otp-container{
+        justify-content:center;
+        padding:20px;
+    }
+
+    .otp-box{
+        width:100%;
+        height:auto;
+    }
+
+    .otp-form{
+        width:100%;
+        transform:none;
+        padding:30px;
+    }
+
+    .otp-heading{
+        font-size:36px;
+    }
+
+    .otp-input{
+        width:45px;
+        height:50px;
+        font-size:20px;
+    }
+
+    .otp-input-container{
+        gap:8px;
+    }
+
+}

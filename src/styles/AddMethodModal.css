@@ -1,0 +1,98 @@
+.modal-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+.method-modal{
+    width:500px;
+    background:#ffffff;
+    border-radius:20px;
+    padding:35px;
+    position:relative;
+    text-align:center;
+    animation:popup .3s ease;
+}
+
+@keyframes popup{
+    from{
+        transform:scale(.8);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+.close-btn{
+    position:absolute;
+    top:15px;
+    right:18px;
+    border:none;
+    background:none;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.method-modal h2{
+    color:#1A8FB4;
+    margin-bottom:10px;
+}
+
+.method-modal p{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.method-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.method-btn{
+    border:none;
+    padding:18px;
+    border-radius:15px;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+
+    transition:.3s;
+}
+
+.barcode-btn{
+    background:#1A8FB4;
+    color:white;
+}
+
+.barcode-btn:hover{
+    background:#0d7798;
+    transform:translateY(-3px);
+}
+
+.manual-btn{
+    background:#c9e2ec;
+    color:#1A8FB4;
+}
+
+.manual-btn:hover{
+    background:#c9e2ec;
+    transform:translateY(-3px);
+}
+
+.or-text{
+    font-size:16px;
+    font-weight:bold;
+    color:#888;
+}

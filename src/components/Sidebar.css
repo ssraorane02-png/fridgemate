@@ -1,0 +1,122 @@
+.sidebar{
+
+    width:260px;
+    height:100vh;
+
+    position:fixed;
+    left:0;
+z-index:1000;
+transition:0.3s;
+    top:0;
+
+    background:#ffffff;
+
+    box-shadow:4px 0 20px rgba(0,0,0,.08);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    padding:30px 20px;
+
+}
+
+.sidebar-logo{
+
+    color:#1A8FB4;
+    font-size:32px;
+    margin-bottom:50px;
+}
+
+.sidebar-logo span{
+
+    color:#6fcfe7;
+
+}
+
+.sidebar-menu{
+
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+
+}
+
+.sidebar-link{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    padding:15px 18px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    color:#555;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.sidebar-link:hover{
+
+    background:#1A8FB4;
+    color:white;
+
+}
+
+.sidebar-link.active{
+
+    background:#1A8FB4;
+    color:white;
+
+}
+
+.logout-btn{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#ff4b4b;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.logout-btn:hover{
+
+    background:#d93030;
+}
+.sidebar{
+    animation:slideIn .3s ease;
+}
+
+@keyframes slideIn{
+
+    from{
+        transform:translateX(-100%);
+    }
+
+    to{
+        transform:translateX(0);
+    }
+
+}

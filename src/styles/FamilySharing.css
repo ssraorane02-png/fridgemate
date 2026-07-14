@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.family-page{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(26,45,81,.82),
+    rgba(8,15,28,.82)),
+    url("../assets/images/dashboard-bg.png");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.family-container{
+
+    width:700px;
+
+    margin:auto;
+
+    padding:40px 0;
+}
+
+.family-container h1{
+
+    color:white;
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:35px;
+}
+
+.invite-card,
+.members-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin-bottom:30px;
+}
+
+.invite-card h2,
+.members-card h2{
+
+    color:white;
+
+    margin-bottom:25px;
+}
+
+.invite-card input{
+
+    width:100%;
+
+    height:55px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    padding:0 18px;
+
+    font-size:16px;
+
+    color:white;
+
+    background:rgba(255,255,255,.10);
+
+    margin-bottom:20px;
+}
+
+.invite-card input::placeholder{
+
+    color:#ddd;
+}
+
+.invite-card button{
+
+    width:100%;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#1A8FB4;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    transition:.3s;
+}
+
+.invite-card button:hover{
+
+    background:#0d7b9c;
+}
+
+.member-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.10);
+}
+
+.member-row:last-child{
+
+    border:none;
+}
+
+.member-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.member-icon{
+
+    font-size:42px;
+
+    color:#1A8FB4;
+}
+
+.member-info h3{
+
+    color:white;
+
+    font-size:20px;
+}
+
+.member-info span{
+
+    color:#ddd;
+
+    font-size:15px;
+}
+
+.remove-btn{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#ff4d4d;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.remove-btn:hover{
+
+    background:#d63031;
+}
+
+@media(max-width:768px){
+
+.family-container{
+
+    width:92%;
+}
+
+.member-row{
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.remove-btn{
+
+    width:100%;
+    border-radius:10px;
+}
+
+}

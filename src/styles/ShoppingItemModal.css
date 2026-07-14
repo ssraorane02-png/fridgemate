@@ -1,0 +1,129 @@
+.shopping-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999;
+  backdrop-filter: blur(4px);
+}
+
+.shopping-modal {
+  width: 460px;
+  background: #232938;
+  border-radius: 18px;
+  padding: 30px;
+  position: relative;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,.45);
+
+  animation: popup .3s ease;
+}
+
+@keyframes popup{
+  from{
+    transform: scale(.9);
+    opacity:0;
+  }
+  to{
+    transform: scale(1);
+    opacity:1;
+  }
+}
+
+.shopping-close-btn{
+  position:absolute;
+  top:15px;
+  right:18px;
+
+  background:none;
+  border:none;
+
+  color:#fff;
+  font-size:20px;
+  cursor:pointer;
+}
+
+.shopping-modal h2{
+  color:white;
+  text-align:center;
+  margin-bottom:25px;
+  font-size:28px;
+}
+
+.shopping-form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.shopping-form input,
+.shopping-form select{
+
+  width:100%;
+  height:52px;
+
+  border:none;
+  border-radius:10px;
+
+  padding:0 16px;
+
+  background:#31384a;
+
+  color:white;
+  font-size:15px;
+
+  outline:none;
+}
+
+.shopping-form input::placeholder{
+  color:#bcbcbc;
+}
+
+.shopping-form select{
+  cursor:pointer;
+}
+
+.shopping-btns{
+  display:flex;
+  justify-content:flex-end;
+  gap:15px;
+  margin-top:12px;
+}
+
+.cancel-btn,
+.add-btn{
+
+  padding:12px 28px;
+
+  border:none;
+  border-radius:8px;
+
+  font-size:15px;
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:.25s;
+}
+
+.cancel-btn{
+  background:#666;
+  color:white;
+}
+
+.cancel-btn:hover{
+  background:#777;
+}
+
+.add-btn{
+  background:#1A8FB4;
+  color:white;
+}
+
+.add-btn:hover{
+  background:#0f7b9f;
+}

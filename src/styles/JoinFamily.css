@@ -1,0 +1,92 @@
+/* JoinFamily.css */
+
+.join-family-page {
+  min-height: 100vh;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.join-family-card {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.join-family-icon {
+  font-size: 70px;
+  color: #1a8fb4;
+  margin-bottom: 20px;
+}
+
+.join-family-card h1 {
+  color: #222;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.join-family-card p {
+  color: #666;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.join-btn {
+  background: #1a8fb4;
+  color: white;
+  border: none;
+  padding: 14px 35px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.join-btn:hover {
+  background: #147491;
+  transform: translateY(-2px);
+}
+
+.join-btn:active {
+  transform: scale(0.98);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .join-family-card {
+    padding: 30px 20px;
+  }
+
+  .join-family-card h1 {
+    font-size: 24px;
+  }
+
+  .join-family-card p {
+    font-size: 15px;
+  }
+
+  .join-family-icon {
+    font-size: 60px;
+  }
+
+  .join-btn {
+    width: 100%;
+  }
+}
+.join-input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
