@@ -50,11 +50,11 @@ body {
 }
 
 .app-title {
-    color: white;
+    color: rgb(227, 214, 214);
     font-size: 58px;
     font-weight: bold;
     margin: 0;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    text-shadow: 0 4px 10px rgba(120, 111, 111, 0.5);
     margin-left: -20px;  /* Move left */
     margin-bottom: 20px;
     text-shadow:

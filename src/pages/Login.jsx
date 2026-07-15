@@ -85,7 +85,7 @@ const handleChange = (e) => {
           </h1>
 
           <p className="login-subtitle">
-            Sign in to continue using FreshSync
+            Sign in to continue using FridgeMate
           </p>
 
           <div className="input-group-box">

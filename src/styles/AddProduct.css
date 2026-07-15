@@ -1,28 +1,45 @@
-.add-product-page{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#eef7fb;
+.add-product-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.062),
+      rgba(0, 0, 0, 0.093)
+    ),
+    url("../assets/images/AddProduct.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 40px 20px;
 }
 
 .add-product-card{
+    width:540px;
+    padding:35px 40px;
 
-    width:550px;
-    background:white;
-    border-radius:20px;
-    padding:35px;
+    background:rgba(151, 148, 148, 0.295);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(25px);
 
-    box-shadow:0 15px 40px rgba(0,0,0,.12);
+    border:2px solid rgba(255,255,255,.12);
+    border-radius:28px;
 
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.205),
+        inset 0 1px 0 rgba(255,255,255,.08);
 }
 
 .add-product-card h2{
-
     text-align:center;
-    color:#1A8FB4;
+    color:#3fc8f4;
     margin-bottom:30px;
-
+    font-size:36px;
+    font-weight:700;
 }
 
 .input-group{
@@ -34,19 +51,33 @@
 }
 
 .input-group label{
-
+    color:#ffffff;
     font-weight:600;
     margin-bottom:8px;
-
 }
 
 .input-group input,
 .input-group select{
 
-    padding:12px;
+    width:100%;
+
+    padding:14px;
+
     border-radius:10px;
-    border:1px solid #ccc;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    background:rgba(255,255,255,.08);
+
+    color:#fff;
+
     font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+    box-sizing:border-box;
 
 }
 
@@ -61,22 +92,43 @@
 
 .cancel-btn{
 
-    background:#ddd;
-    border:none;
+    background:rgba(255,255,255,.15);
+
+    color:#fff;
+
+    border:1px solid rgba(255,255,255,.2);
+
     padding:12px 20px;
+
     border-radius:10px;
+
     cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.cancel-btn:hover{
+
+    background:rgba(255,255,255,.25);
 
 }
 
 .save-btn{
 
     background:#1A8FB4;
+
     color:white;
+
     border:none;
+
     padding:12px 22px;
+
     border-radius:10px;
+
     cursor:pointer;
+
+    transition:.3s;
 
 }
 
@@ -84,4 +136,9 @@
 
     background:#0f7b9f;
 
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(26,143,180,.4);
+
 }
+

@@ -147,7 +147,7 @@ const handleAvatarSelect = async (avatar) => {
         />
 
         <div className="navbar-logo">
-          Fresh<span>Sync</span>
+          Fridge<span>Mate</span>
         </div>
       </div>
 

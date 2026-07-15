@@ -7,14 +7,23 @@
 
 .barcode-container{
 
-    width:100%;
-    min-height:100vh;
+    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-   background:#eef7fb;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.062),
+      rgba(0, 0, 0, 0.093)
+    ),
+    url("../assets/images/AddProduct.jpg");
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 40px 20px;
 
 }
 
@@ -24,13 +33,16 @@
 
     padding:40px;
 
-    border-radius:25px;
+    background:rgba(151, 148, 148, 0.295);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(25px);
 
-    background:rgba(202, 172, 172, 0.15);
+    border:2px solid rgba(255,255,255,.12);
+    border-radius:28px;
 
-    backdrop-filter:blur(18px);
-
-    box-shadow:0 10px 35px rgba(0,0,0,.35);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.205),
+        inset 0 1px 0 rgba(255,255,255,.08);
 
     text-align:center;
 
@@ -47,14 +59,14 @@
 
 .barcode-title{
 
-    color:black;
+    color:#3fc8f4;
     margin-bottom:10px;
 
 }
 
 .barcode-text{
 
-    color:rgb(97, 82, 82);;
+    color:rgb(139, 215, 238);;
     line-height:28px;
     margin-bottom:30px;
 
@@ -173,7 +185,7 @@
 
 .barcode-or{
 
-    color:black;
+    color:rgb(27, 134, 151);
     font-weight:bold;
 
     margin-top:20px;

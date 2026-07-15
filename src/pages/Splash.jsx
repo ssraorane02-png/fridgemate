@@ -15,7 +15,7 @@ function Splash() {
 
         <div className="brand">
           <img src={logo} alt="Logo" className="logo" />
-          <h1 className="app-title">FreshSync</h1>
+          <h1 className="app-title">FridgeMate</h1>
         </div>
 
         <button

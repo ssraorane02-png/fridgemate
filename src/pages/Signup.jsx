@@ -93,7 +93,7 @@ const handleSignup = async (e) => {
           </h1>
 
           <p className="signup-description">
-            Join FreshSync and keep your food fresh and organized.
+            Join FridgeMate and keep your food fresh and organized.
           </p>
 
           <div className="signup-input-box">
