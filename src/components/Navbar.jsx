@@ -22,7 +22,7 @@ useEffect(() => {
     if (!user) return;
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/notifications/${user.id}`
+        `https://fridgemate-ym3b.onrender.com/api/notifications/${user.id}`
       );
 
       setNotifications(response.data.notifications);
@@ -85,7 +85,7 @@ const handleNotifications = async (e) => {
   ) {
     try {
       await axios.put(
-        `http://localhost:5000/api/notifications/read-all/${user.id}`
+        `https://fridgemate-ym3b.onrender.com/api/notifications/read-all/${user.id}`
       );
 
       setNotifications(
@@ -119,7 +119,7 @@ const avatars = [
 const handleAvatarSelect = async (avatar) => {
   try {
     const response = await axios.put(
-      "http://localhost:5000/api/auth/avatar",
+      "https://fridgemate-ym3b.onrender.com/api/auth/avatar",
       {
         userId: currentUser.id,
         avatar,

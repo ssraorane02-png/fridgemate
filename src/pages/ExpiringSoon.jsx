@@ -25,7 +25,7 @@ const [products, setProducts] =
     try {
       const response =
         await axios.get(
-          `http://localhost:5000/api/products/expiring/${user.id}`
+          `https://fridgemate-ym3b.onrender.com/api/products/expiring/${user.id}`
         );
 
       setProducts(

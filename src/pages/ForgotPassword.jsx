@@ -23,7 +23,7 @@ function ForgotPassword() {
 
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/auth/forgot-password",
+      "https://fridgemate-ym3b.onrender.com/api/auth/forgot-password",
       { email }
     );
 

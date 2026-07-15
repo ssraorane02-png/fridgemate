@@ -25,7 +25,7 @@ useEffect(() => {
   const fetchProducts = async () => {
     try {
       const response = await axios.get(
-  `http://localhost:5000/api/products/${user.id}`
+  `https://fridgemate-ym3b.onrender.com/api/products/${user.id}`
 );
 
       setProducts(response.data.products);
@@ -54,7 +54,7 @@ useEffect(() => {
   const fetchRecipes = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/recipes/${user.id}`
+        `https://fridgemate-ym3b.onrender.com/api/recipes/${user.id}`
       );
 
       console.log(response.data);
@@ -72,7 +72,7 @@ useEffect(() => {
   const fetchShopping = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/shopping/${user.id}`
+        `https://fridgemate-ym3b.onrender.com/api/shopping/${user.id}`
       );
 
       setShoppingItems(response.data.items);
@@ -88,7 +88,7 @@ useEffect(() => {
   const fetchExpiring = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/products/expiring/${user.id}`
+        `https://fridgemate-ym3b.onrender.com/api/products/expiring/${user.id}`
       );
 
       setExpiringItems(

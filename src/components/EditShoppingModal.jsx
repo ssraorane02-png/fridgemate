@@ -20,7 +20,7 @@ function EditShoppingModal({ item, onClose, onUpdate }) {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/shopping/${item._id}`,
+        `https://fridgemate-ym3b.onrender.com/api/shopping/${item._id}`,
         {
           itemName,
           quantity,

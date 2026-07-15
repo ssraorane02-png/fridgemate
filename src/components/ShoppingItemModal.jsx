@@ -21,7 +21,7 @@ const handleAddItem = async () => {
   }
 
   try {
-    await axios.post("http://localhost:5000/api/shopping/add", {
+    await axios.post("/api/shopping/add", {
       userId: user.id,
       itemName,
       quantity,

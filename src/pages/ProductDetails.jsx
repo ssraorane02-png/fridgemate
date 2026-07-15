@@ -20,7 +20,7 @@ useEffect(() => {
   const fetchProduct = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/products/product/${id}`
+        `https://fridgemate-ym3b.onrender.com/api/products/product/${id}`
       );
 
       setProduct(response.data.product);

@@ -23,7 +23,7 @@ function JoinFamily() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/family/join",
+        "https://fridgemate-ym3b.onrender.com/api/family/join",
         {
           token,
           name,

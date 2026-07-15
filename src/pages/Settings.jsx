@@ -30,7 +30,7 @@ const fetchProfile = async () => {
   try {
     const response =
       await axios.get(
-        `http://localhost:5000/api/users/${user.id}`
+        `https://fridgemate-ym3b.onrender.com/api/users/${user.id}`
       );
 
     setProfile(response.data);
@@ -91,7 +91,7 @@ const isValidPassword = (password) =>
 
   try {
     await axios.put(
-      `http://localhost:5000/api/users/change-password/${user.id}`,
+      `https://fridgemate-ym3b.onrender.com/api/users/change-password/${user.id}`,
       {
         currentPassword,
         newPassword,

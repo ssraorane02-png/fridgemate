@@ -28,7 +28,7 @@ const user = JSON.parse(
 
   try {
     await axios.post(
-  "http://localhost:5000/api/family/invite",
+  "https://fridgemate-ym3b.onrender.com/api/family/invite",
   {
     email,
     userId: user.id,
@@ -71,7 +71,7 @@ const user = JSON.parse(
 
   try {
     await axios.delete(
-      "http://localhost:5000/api/family/remove",
+      "https://fridgemate-ym3b.onrender.com/api/family/remove",
       {
         data: {
           userId: user.id,
@@ -105,7 +105,7 @@ const fetchMembers = async () => {
   try {
     const response =
       await axios.get(
-        `http://localhost:5000/api/family/${user.id}`
+        `https://fridgemate-ym3b.onrender.com/api/family/${user.id}`
       );
 
     const family =

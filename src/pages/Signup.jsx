@@ -51,7 +51,7 @@ const handleSignup = async (e) => {
 
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/auth/signup",
+      "https://fridgemate-ym3b.onrender.com/api/auth/signup",
       {
         fullName,
         email,

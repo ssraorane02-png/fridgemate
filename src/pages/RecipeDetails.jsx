@@ -18,7 +18,7 @@ const [recipe, setRecipe] = useState(null);
   const fetchRecipe = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/recipes/details/${id}`
+        `https://fridgemate-ym3b.onrender.com/api/recipes/details/${id}`
       );
 
       setRecipe(response.data.recipe);

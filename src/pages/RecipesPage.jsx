@@ -32,7 +32,7 @@ useEffect(() => {
     try {
       const response =
         await axios.get(
-          `http://localhost:5000/api/recipes/${user.id}`
+          `https://fridgemate-ym3b.onrender.com/api/recipes/${user.id}`
         );
 
       setRecipes(

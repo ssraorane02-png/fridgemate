@@ -24,7 +24,7 @@ function EditProduct() {
   const fetchProduct = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/products/product/${id}`
+        `https://fridgemate-ym3b.onrender.com/api/products/product/${id}`
       );
 
       const product = response.data.product;
@@ -60,7 +60,7 @@ function EditProduct() {
 
   try {
     const response = await axios.put(
-      `http://localhost:5000/api/products/update/${id}`,
+      `https://fridgemate-ym3b.onrender.com/api/products/update/${id}`,
       {
         productName,
         category,

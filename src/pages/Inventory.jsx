@@ -41,7 +41,7 @@ const handleDelete = async (id) => {
   try {
 
     const response = await axios.delete(
-      `http://localhost:5000/api/products/${id}`
+      `https://fridgemate-ym3b.onrender.com/api/products/${id}`
     );
 
     Swal.fire({
@@ -71,7 +71,7 @@ useEffect(() => {
   const fetchProducts = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/products/${user.id}`
+        `https://fridgemate-ym3b.onrender.com/api/products/${user.id}`
       );
 
       setProducts(response.data.products);

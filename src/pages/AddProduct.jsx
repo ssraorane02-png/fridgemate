@@ -52,7 +52,7 @@ const handleSave = async () => {
 
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/products/add",
+      "https://fridgemate-ym3b.onrender.com/api/products/add",
       {
         productName,
         category,
