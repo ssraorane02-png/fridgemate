@@ -1,11 +1,12 @@
 # 🥶 FridgeMate
 
-FridgeMate is a MERN Stack web application that helps users manage refrigerator inventory, track food expiry dates, create shopping lists, and discover recipes based on available ingredients.
+FridgeMate is a MERN Stack web application that helps users manage refrigerator inventory, track expiry dates, create shopping lists, and discover recipes.
 
 ## 🚀 Live Demo
 
-- **Frontend:** https://fridgemate-seven.vercel.app
-- **Backend:** https://fridgemate-ym3b.onrender.com
+**Frontend:** https://fridgemate-psi.vercel.app/
+
+**Backend API:** https://fridgemate-ym3b.onrender.com
 
 ## ✨ Features
 
@@ -16,19 +17,14 @@ FridgeMate is a MERN Stack web application that helps users manage refrigerator 
 - Recipe Suggestions
 - Family Management
 - Notifications
-- Profile & Settings
+- Responsive Design
 
 ## 🛠️ Tech Stack
 
-**Frontend:** React.js, JavaScript, CSS, Axios
+- React.js
+- Node.js
+- Express.js
+- MongoDB Atlas
+- CSS
+- Axios
 
-**Backend:** Node.js, Express.js, MongoDB Atlas, Mongoose, Nodemailer
-
-## ⚙️ Installation
-
-```bash
-git clone https://github.com/ssraorane02-png/fridgemate.git
-cd fridgemate
-npm install
-npm run dev
-```
