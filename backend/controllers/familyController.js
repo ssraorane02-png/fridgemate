@@ -33,7 +33,7 @@ export const sendInvite = async (req, res) => {
     });
 
     const inviteLink =
-      `http://localhost:5173/join-family/${token}`;
+      `https://fridgemate-psi.vercel.app/join-family/${token}`;
 
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
